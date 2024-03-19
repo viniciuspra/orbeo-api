@@ -1,0 +1,27 @@
+{
+  "name": "Orbeo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch --env-file .env src/http/server.ts",
+    "migrate": "prisma migrate dev",
+    "studio": "prisma studio"
+  },
+  "keywords": [],
+  "author": "Vinicius Cascaes <vinicius.cascaesp@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.536.0",
+    "@aws-sdk/s3-request-presigner": "^3.536.0",
+    "@prisma/client": "5.11.0",
+    "fastify": "^4.26.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.29",
+    "prisma": "^5.11.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  }
+}
